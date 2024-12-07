@@ -1,0 +1,58 @@
+/* Navbar Styling */
+.styled-navbar {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out; /* Smooth fade effect */
+    opacity: 1; /* Default to visible */
+}
+
+.styled-navbar.hidden {
+    opacity: 0; /* Faded out */
+    pointer-events: none; /* Prevent interaction when faded */
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #9780b9; /* Light purple color for text */
+    text-transform: uppercase;
+    position: relative;
+    padding: 10px 5px;
+    transition: color 0.3s ease; /* Smooth text color transition */
+}
+
+/* Underline effect */
+.navbar-menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #6e4dbd; /* Purple underline */
+    transform: scaleX(0); /* Start with hidden underline */
+    transform-origin: center; /* Scale starts from the center */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+/* Hover Effects */
+.navbar-menu a:hover {
+    color: #222121; /* Darker color on hover */
+}
+
+.navbar-menu a:hover::after {
+    transform: scaleX(1); /* Reveal underline on hover */
+}
+

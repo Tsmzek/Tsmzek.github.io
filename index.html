@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css.css"> <!-- General Body Styles -->
+    <link rel="stylesheet" href="navCSS.css"> <!-- Navbar Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- NavBar Section -->
+        <nav class="styled-navbar">
+            <ul class="navbar-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="Game.html">Game</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Main Section -->
+        <main id="home"></main>
+        <section class="hero">
+            <div class="content">
+                <h1>I'm Rahim Ajmal Ikhlas, <br> an upcoming Frontend Developer!</h1>
+                <p>I am a current Bachelor of Science in Computer Science student with a foundation in software development, 
+                   database management, and problem-solving, actively seeking internship opportunities to apply and expand my skills.</p>  
+                <button id="download-resume-btn" onclick="downloadResume()">Download Resume</button>
+            </div>
+            <div class="profile-image">
+                <img src="profile.png" alt="Rahim">
+            </div> 
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <h1>Skills</h1>
+            <p>My Knowledge Level in Software & Coding!</p>
+            <div class="skills-container">
+                <div class="skill">
+                    <span class="skill-name">Python</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-fill="70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">React</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-fill="50%"></div>
+                    </div>
+                    <span class="skill-percent">50%</span>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">Java</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-fill="40%"></div>
+                    </div>
+                    <span class="skill-percent">40%</span>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">Photoshop & Illustrator</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-fill="70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">SQL</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-fill="55%"></div>
+                    </div>
+                    <span class="skill-percent">55%</span>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">JavaScript & HTML & CSS</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-fill="70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">Ruby</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-fill="60%"></div>
+                    </div>
+                    <span class="skill-percent">60%</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="portfolio-header">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <a href="Portfolio.html">
+                        <img src="project1.jpg" alt="Project 1">
+                        <div class="portfolio-overlay">
+                            <span>PROJECT 1</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="Portfolio (2).html">
+                        <img src="project2.jpg" alt="Project 2">
+                        <div class="portfolio-overlay">
+                            <span>PROJECT 2</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="Portfolio (3).html">
+                        <img src="Project3.jpg" alt="Project 3">
+                        <div class="portfolio-overlay">
+                            <span>PROJECT 3</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Experience Section -->
+        <section class="experience-section">
+            <h1>EXPERIENCE</h1>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h2>June 2023 - August 2023</h2>
+                        <h3>EDGE Summer Intern</h3>
+                        <p>Augustana College, Rock Island, IL</p>
+                        <p>Design and create Websites according to client needs using HTML script.</p>
+                        <p>Managing time efficiently when it comes to creating websites and working hours. To stay organized 
+                        and finish on time</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="content">
+                        <h2>Aug 2023 - May 2024</h2>
+                        <h3>Global Ambassador & Co-Leader</h3>
+                        <p>Augustana College, Rock Island, IL</p>
+                        <p>Led the Office of International Student and Scholar Services, serving as a role model and primary point of contact for 
+                            incoming international students.</p> 
+                        <p>Coordinated events and orientation programs to ensure a welcoming experience for first-year international students.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h2>September 2021 - October 2021</h2>
+                        <h3>Graphic Design & Content Creator</h3>
+                        <p>InternFareena Imamat Official, Toronto, Canada</p>
+                        <p>Design and created content using Adobe Photoshop and Canva to help create a client base through 
+                            Instagram and Facebook</p>
+                        <p>Building Professional relationships with a manager to thoroughly explain and convince them of ideas 
+                            to better the business.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right" style="min-height: 500px;">
+                    <div class="content">
+                        <h2>June 2019 - August 2019</h2>
+                        <h3>Analyst Intern</h3>
+                        <p>Ikhlas Textile Sourcing Company, Faisalabad, Pakistan</p>
+                        <p>Managed and organized the emails for the manager to review and reply.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <footer id="contact">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or would like to connect, feel free to reach out using the form below.</p>
+            <form action="https://formspree.io/f/xyzyvalp" method="POST" class="contact-form">
+                <label>
+                    Your email:
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message" rows="5" required></textarea>
+                </label>
+                <button type="submit">Send</button>
+            </form>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

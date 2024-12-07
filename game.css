@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background2.jpeg'); 
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    background-color: #333;
+    border: 1px solid #fff;
+}
+
+.score {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.button-container {
+    position: absolute;
+    top: 80px; 
+    left: 100px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6e7d70;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+}
+
+button:hover {
+    background-color: #25db6b;
+}
+
+/* Home Page Button */
+#homeButton {
+    background-color: #007bff;
+}
+
+#homeButton:hover {
+    background-color: #0056b3;
+}
